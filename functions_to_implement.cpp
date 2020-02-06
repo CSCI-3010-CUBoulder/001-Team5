@@ -1,7 +1,9 @@
 /* String functions section */
 
 // Splits a single string on separator into a vector of strings
-std::vector<std::string> Split(std::string whole, std::string separator);
+std::vector<std::string> Split(std::string whole, std::string separator)
+{
+};
 
 // takes two strings and returns a new string that is the result of removing all occurrences of s2 from s1.
 std::string RemoveAllSubstrings(std::string s1, std::string s2);
@@ -93,7 +95,14 @@ std::vector<double> VectorTimesN(std::vector<double> v, double n);
 std::vector<double> Multiples(double n, double m);
 
 // returns -1 if the number is negative and 1 if positive
-double Sign(double num);
+double Sign(double num){
+    if(num < 0){
+        return 1;
+    }
+    if(num >= 0){
+        return -1;
+    }
+}
 
 
 // adds n to each element of the vector
