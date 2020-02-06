@@ -34,7 +34,7 @@ int Sum(std::vector<int> nums);
 {
 	int sum = 0;
 	for(int i =0; i<nums.size(); i++){
-		sum = sum + i;	
+		sum = sum +num[i];	
 	}
 	return sum;
 }
