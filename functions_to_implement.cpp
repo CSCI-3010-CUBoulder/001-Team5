@@ -96,13 +96,13 @@ std::vector<double> Multiples(double n, double m);
 
 // returns -1 if the number is negative and 1 if positive
 double Sign(double num){
-    if(num < 0){
-        return 1;
+    if(num < 0.0){
+        return 1.0;
     }
-    if(num >= 0){
-        return -1;
+    else{
+        return -1.0;
     }
-}
+};
 
 
 // adds n to each element of the vector
